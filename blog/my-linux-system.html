@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<title>My Linux System!</title>
+<link rel='stylesheet' type='text/css' href='../style.css'>
+<style text/css>body{font:14px monospace}</style>
+<meta charset='utf-8'/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<header><nav><a href="../index.html" id="logo">[laith] $</a> <a href="../blogindex.html" class="active-page">./blog</a> <a href="../personal.html">./personal</a></nav></header>
+<body>
+<main>
+<h1># My Linux System!</h1>
+<em>April 7, 2022</em>
+<h2>## what distro I use ?</h2>
+<p>I have tried many linux distros (Mint, Lubuntu, Kubuntu, Opensuse, Fedora, Arch, Artix), I used to use arch/artix, but recently I found a distro called <a href="https://www.voidlinux.org">voidlinux</a>, its really minimal (far more then arch), it use runit as init system, musl/glibc as C compiler, dash as its default shell and xbps as package manager (its fast and support compile from source using xbps-src), at the moment I think it's the best usable minimal distro available right now, and I will use it as my daily driver until we get a source-based system that runs an extremely lightweight Linux kernel with musl libc and toybox (or busybox) and runit/sinit as the init system with statically linked libraries with a simple lightweight package manager.</p>
+<br>
+<h2>## xorg or wayland ?</h2>
+<p>I'm using xorg at this time, but I really hope that wayland gets more and more development and get better package support, because it less bloated and faster then xorg, so it would be a good to use it, I mean why not ;)</p>
+<br>
+<h2>## DE or WM ?</h2>
+<p>DE is one of the things that makes me hate linux at the beginning, It was unstable and very bloated, in fact even windows was lighter then it, my custom windows 10 LTSB 2015 build was using about 600-500Mb of ram while gnome was using about 1Gb of ram with the same CPU usage, So, I was moving between windows and linux a lot, until I found xfce4 DE, It's was sample and stable, even then I wasn't very comfortable with linux, until I found dwm, It was perfect for me, I loved everything about dwm (except patching), Since I started using it until now I haven't face any bug or something like that, It was easy to use and it's really improve my productivity and made me very comfortable with my computer and the most important thing that is dwm written in C, So it's very fast even in my 12 years old laptop, The code base is very minimal and lightweight, even my ram usage after I start xorg is about 30-40Mb ! it's that lightweight (not really, I have configure my kernel to get this ram usage).</p>
+<br>
+<h3>## The rest of the tools: </h3>
+<p>Terminal: <a href="https://st.suckless.org/">ST</a>, It's very minimal terminal and do what it should, the only downside is it leaks bidirectional UTF-8 text support or right to left languages like arabic. </p>
+<p>Browser: qutebrowser (what a shilly name), it based on "QtWebEngine" (which is based on chromium) with vim-style key bindings and a minimal GUI ..., its as fast as chromium but lighter and more <a href="https://spyware.neocities.org/articles/qutebrowser.html">privacy-respecting</a> browser, its best linux browser I have ever tried (I mean it's the only powerfull browser that tryed to follow the unix phol).</p>
+<p>Music player: cums, It's fast, written in C and don't need any dependencies (I mean you mpd).</p>
+<p>Video player: mpv, It's best video player available right now, it can be configure to use as low cpu usage as possable.</p>
+<p>Editor: neovim, It's vim, but better (not sure, it may be too blot) .</p>
+<p>dwm bar: slstatus, It's easy to customize and it's written in C, so it's easy on CPU.</p>
+</main>
+<footer> - <strong><a href='http://LaithOsama.ml/'>Laith Osama</a></strong></footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+html {background: #1d2021;}
+body{color:#bdae92; margin:1em auto; padding:1em; max-width:60em;}
+main{background:#282828; padding:1em;border: 2px solid #7c6f64;}
+footer{margin-top:1em;}
+h1,h2,h3,h4{font-size:1rem;color:#98971a; text-shadow: 2px 2px black;}
+a{color:#b16286; text-decoration:none;}
+a:hover{border-bottom: 1px solid;}
+.active-page{color:#d79921;}
+nav{padding:1.5em; font-size:16px;}
+#logo{color: #1d2021; background: #98971a; padding: 0.25rem;}

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="rss.css" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+<title>Laith's RSS Feed</title>
+<language>en-us</language>
+<link>http://laithosama.ml/rss.xml</link>
+
+<!-- LB -->
+<item>
+<title>My Linux System</title>
+<guid>http://LaithOsama.ml/2022.html#my-linux-system</guid>
+<pubDate>Thu, 07 Apr 2022 19:24:34 +0300</pubDate>
+<description><![CDATA[
+<header>
+    <h1>My linux system!</h1>
+    </header>
+  <h2>what distro I use ?</h2>
+  <p>I have tried many linux distros (Mint, Lubuntu, Kubuntu, Opensuse, Fedora, Arch, Artix), I used to use arch/artix, but recently I find distro called <a href="https://www.voidlinux.org">voidlinux</a>, its really minimal (away more then arch), it use runit as init system, musl/glibc as C compiler (i use musl), dash as its default shell and xbps as package manager (its fast and support compile from source using xbps-src), at this time I think it's the best usable minimal distro available right now, and I will use it as my daily driver until we get a source-based system that runs an extremely lightweight Linux kernel with musl libc and toybox (or busybox) and runit/sinit as the init system with statically linked libraries with a simple lightweight package manager.</p>
+  <br>
+  <h2>xorg or wayland ?</h2>
+  <p>I'm using xorg at this time, but I really hope that wayland get more development and get batter package support, becaue it less bloated, faster the xorg and will be a good think to use.</p>
+  <br>
+  <h2>DE or WM ?</h2>
+  <p>DE one of the things that makes me hate linux at the beginning, It was unstable and very bloated, in fact even windows
+was lighter then it, my custom windows 10 LTSB 2015 build was using about 600-500Mb of ram and gnome was using about 1Gb of ram with the same CPU usage, So, I was moving between windows and linux a lot, until I found xfce4 DE, It's was sample and stable, even then I wasn't very comfortable with linux, until I found dwm, and oh my god, I'm Literally fall in love with it, It was perfect for me, I loved everything about dwm (except patching), Since I started using it until now I haven't face any bug or something like that, It was easy to use ant it really improve my productivity and made me very comfortable with my computer and the most important thing is dwm written in C, So it's very fast even in my 12 years old laptop, The code base is very minimal and lightweight, even my ram usage after I start xorg is about 30-40Mb ! it's that lightweight (not really, I have configure my kernel to get this ram usage).</p>
+  <br>
+<h3>The rest of the tools: </h3>
+  <p>Terminal: <a href="https://st.suckless.org/">ST</a>, It's very minimal terminal and do what it should, the only downside is it leaks bidirectional UTF-8 text support or right to left languages like arabic. </p>
+  <p>Browser: I used to moving between ungoogled-chromium and firefox, but duo the leaks of ungoogled-chromium binary package in void repos, I decided to use firefox and to be honest it's doing good, I loved it.</p>
+  <p>Music player: Cums, It's fast, written in C and don't need any dependencies.</p>
+  <p>Video player: mpv, It's best video player available right now.</p>
+  <p>Editor: neovim, It's vim, but batter.</p>
+  <p>dwm bar: slstatus, It's easy to customize status bar and it's wirtten in C, so it's easy on CPU.</p>
+]]></description>
+</item>
+
+
+<item>
+<title>How to Build and Upload a Website, and why you should ?</title>
+<guid>http://LaithOsama.ml/2022.html#how-to-build-and-upload-a-website-and-why-you-should</guid>
+<pubDate>Thu, 07 Apr 2022 11:24:19 +0300</pubDate>
+<description><![CDATA[
+<h1>Learn HTML basics</h1>
+ <ol>
+    <li>first of all, you have to see this 2 videos until the end!, <a href="https://www.youtube.com/watch?v=KJadKSKA7Mg&t=6
+s">LukeSmith's video</a> (enough to build a simple personal website) and <a href="https://www.youtube.com/watch?v=PlxWf493en
+4">FreeCompCode video</a> (Her voice is unbeatable lol). </li>
+    <li> choose a good text editor, Personally I use <a href="https://github.com/vim/vim.git">vim</a>/<a href="https://neovim.io">neovim</a>, which is the best text editor ever, It's available in linux, windows and mac, you can use VScode instead but it's extremely bloated and slow.
+      <ol/>
+]]></description>
+</item>
+</channel>
+</rss>
+
