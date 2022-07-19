@@ -44,7 +44,7 @@ publish() { \
 	realname="$(echo "$htaccessentry" | cut -d'"' -f2)"
 	rssdate="$(grep "$basefile" blog/.htaccess | sed "s/.*\.html\"* *#*//g" | tr -d '\n')"
 	[ -z "$rssdate" ] && rssdate="$(LC_TIME=en_US date '+%a, %d %b %Y %H:%M:%S %z')" # RSS date formats must comply with standards to validate.
-	webdate="$(date '+%a, %d %b %Y')" # But this visible date you can set to any format.
+	webdate="$(date '+%a, %b %Y')" # But this visible date you can set to any format.
 	tmpdir=$(mktemp -d)
 	printf "<!DOCTYPE html>\\n<html lang=\"en\">\\n<head>\\n<title>%s</title>\\n<link rel='stylesheet' type='text/css' href='%s'>\\n<meta charset='utf-8'/>\\n<meta name="viewport" content="width=device-width, initial-scale=1">\\n</head>\\<header><nav><a href="../index.html" id="logo">[laith] $</a> <a href="blogindex.html">./blog</a> <a href="personal.html">./personal</a></nav></header>\\n<body>\\n<main>\\n<h1>%s</h1>\\n<em>%s</em>\\n<hr />\\n%s\\n<main>\\n<footer>by <strong><a href='%s'>%s</a></strong></footer>\\n</body>\\n</html>" "$realname" "$css" "$realname" "$webdate" "$(cat "$webdir/blog/.drafts/$basefile")" "$website" "$name" > "$webdir/blog/$basefile"
 	printf "\\n<item>\\n<title>%s</title>\\n<guid>%s%s#%s</guid>\\n<pubDate>%s</pubDate>\\n<description><![CDATA[\\n%s\\n]]></description>\\n</item>\\n\\n" "$realname" "$website" "$base" "$rssdate" "$(cat "$webdir/blog/.drafts/$basefile")" >  "$tmpdir/rss"
